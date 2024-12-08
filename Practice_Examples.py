@@ -13,3 +13,24 @@ for i in range(num+1):
         i += 1
      
 print(f"The Factorial Of {num} is {num1}")
+
+#Guessing Game: write a program where the user has to guess a secret number between 1 and 10.
+#Keep askking until they guess correstly.
+#Use a while loop.
+secretnum = ""
+while secretnum != "2":
+    secretnum = input("Guess a secret number between 1 and 10, Enter Number:  ")
+print("Your guess is correct, secret number is 2")
+
+
+
+#Multiplication Table: usee nested loops to prinit the multiplication table from 1 to 10.
+
+for i in range(1, 11):
+    for j in range(1, 11):
+        mul = i * j
+        print(mul)
+    print("\n")    
+
+
+
