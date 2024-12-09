@@ -60,3 +60,13 @@ calculate(5, 3, "+")
 calculate(5, 3, "-")
 calculate(10, 2, "*")
 calculate(10, 2, "/")    
+
+#4 Even or Odd Checker: write a function is_even(number) thet returns True if the number is even, and False if it's odd.
+number = int(input("Enter the number: "))
+def is_even(number):
+    if number % 2 == 0:
+        print(f"{number} is Even Number")
+    else:
+        print(f"{number} is Odd Number")
+
+is_even(number)
