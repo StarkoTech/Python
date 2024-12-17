@@ -1,0 +1,4 @@
+1.Python Basics:
+Variables, Data Types, Input/Output, Basic Operators.
+Time: ~2-3 days.
+This is appended text.
