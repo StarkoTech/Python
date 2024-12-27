@@ -152,7 +152,7 @@ print("The Factorial of Number is",n)
 '''
 # 7. Lists
 # 17. Write a program to create a list of 5 numbers entered by user and print the list.
-
+'''
 Number_list = []
 for i in range(5):
     num = float(input(f"Enter Number {i+1}:"))
@@ -169,3 +169,38 @@ for i in Number_list:
         min_num = i
 print(f"The Maximum nunmber in the {Number_list} list is {max_num}")
 print(f"The Minimum number in the {Number_list} list is {min_num}")
+'''
+# 8. Dictionaries
+# 19. Write a program to create a dictionary with keys as subjects (e.g. Math, Scince) and values as marks. Print the subjecct with the highest marks.
+'''
+Dictionary = {"Math": 90, "Science": 80, "English": 70, "History": 85}
+max_marks = max(Dictionary.values())
+for key, values in Dictionary.items():
+    if values == max_marks:
+        print(f"The Subject with Highest Marks is {key} with {values}")
+
+# 20. Without loop
+Marks_Dict = {"Math": 85, "Scince": 90, "English": 78, "History": 88}
+Highest_subject = max(Marks_Dict, key=Marks_Dict.get)
+Highest_marks = Marks_Dict[Highest_subject]
+print(f"The Subject with Highest Marks is {Highest_subject} with {Highest_marks}")
+'''
+# 20. Write a program to count the occurrences of each word in a given sentence.
+# Input snentece
+sentence = "Hello World, Hello Python, Hello World"
+# Split the sentence into words by spaces
+words = sentence.split()
+# Create an empty dictionary to store the count of each word
+words_count = {}
+# loop through each word in the list of words
+for i in words:
+    # if word is already in the dictionary, increment its count
+    if i in words_count:
+        words_count[i] = words_count[i] + 1
+    #if the word is not in the dictionary, add it with a count of 1
+    else:
+        words_count[i] = 1
+    # Print the count of each word
+
+for i, count in words_count.items():
+    print(f" {i} appears {count} times in the sentence.")
