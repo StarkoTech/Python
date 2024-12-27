@@ -126,3 +126,46 @@ elif num2 > num1 and num2 > num3:
 else:
     print(f"{num3} is Largest Number.")
 '''
+# 6. Loops
+# 14. Write a program to print all even numbers between 1 to 50.
+'''
+for i in range(1,51):
+    if i % 2 == 0:
+        print(i)
+'''
+# 15. Write a program to calculaate the factorial of a number entered by the user.
+'''
+num = int(input("Enter the Number: "))
+n = 1
+for i in range(1, num+1):
+    n = n * i
+print(f"The Factorial of {num} is {n}")
+'''
+# 16. using while loop
+'''
+num = int(input("Enter the Number: "))
+n = 1
+while num > 0:
+    n = n * num
+    num = num - 1
+print("The Factorial of Number is",n)
+'''
+# 7. Lists
+# 17. Write a program to create a list of 5 numbers entered by user and print the list.
+
+Number_list = []
+for i in range(5):
+    num = float(input(f"Enter Number {i+1}:"))
+    Number_list.append(num)
+print("The list of number is", Number_list)
+
+# 18. Write a program to find the maximum and minimun nummber in a list.
+max_num = Number_list[0]
+min_num = Number_list[0]
+for i in Number_list:
+    if i > max_num:
+        max_num = i
+    if i < min_num:
+        min_num = i
+print(f"The Maximum nunmber in the {Number_list} list is {max_num}")
+print(f"The Minimum number in the {Number_list} list is {min_num}")
