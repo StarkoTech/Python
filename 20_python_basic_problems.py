@@ -186,6 +186,7 @@ Highest_marks = Marks_Dict[Highest_subject]
 print(f"The Subject with Highest Marks is {Highest_subject} with {Highest_marks}")
 '''
 # 20. Write a program to count the occurrences of each word in a given sentence.
+'''
 # Input snentece
 sentence = "Hello World, Hello Python, Hello World"
 # Split the sentence into words by spaces
@@ -200,7 +201,52 @@ for i in words:
     #if the word is not in the dictionary, add it with a count of 1
     else:
         words_count[i] = 1
-    # Print the count of each word
 
+# Print the count of each word
 for i, count in words_count.items():
+    # The "count" is stored directly in the dictionary.
+    # There’s no need to define a separate variable because the dictionary keeps track of it for each word.
     print(f" {i} appears {count} times in the sentence.")
+'''
+# 9. File Handling
+# 21. Write a program to write youre name and age to a file called info.text.
+'''
+file = open("info.txt", "w")
+# Write the name and age to the file
+file.write("Name: Suraj Mahajan\nAge: 28")
+# Close the file    
+file.close()
+'''
+# 22. Write a program to read the contents of info..txt and print them.
+# Read the contents of the file
+'''
+with open("info.txt", "r") as file:
+    # Print the contents of the file
+    print(file.read())
+file.close()
+'''
+
+# 10. Miscellaneous
+# 23. Write a program to print the fibonacci swquence up to n terms, where n is entered by the user.
+'''
+num = int(input("Enter the Desired Number: "))
+n1 = 0
+n2 = 1
+for i in range(int(num)):
+    print(n1)
+    nth = n1 + n2
+    n1 = n2
+    n2 = nth
+'''
+# 24. Write a program to check if a given year is a leap year.
+'''
+year = int(input("Enter the Year: "))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print(f"{year} is a Leap Year.")
+else:
+    print(f"{year} is not a Leap Year.")
+'''
+x = 5
+assert x > 4, "x must be positive"
+result = "Positive" if x > 0 else "Non_Positive"    
+print(result)
